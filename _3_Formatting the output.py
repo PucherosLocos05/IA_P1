@@ -1,3 +1,6 @@
+#Jesus Antonio Baez Ortega 23310372 6E
+#LAB#3 Formatting the output
+
 print("    *")
 print("   * *")
 print("  *   *")
