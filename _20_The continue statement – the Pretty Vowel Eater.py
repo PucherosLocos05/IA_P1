@@ -1,26 +1,13 @@
-#Jesus Antonio Baez Ortega 23310372 6E
-#LAB#20 The continue statement – the Ugly Vowel Eater
+# Jesus Antonio Baez Ortega 23310372 6E
+# LAB#20 The continue statement – the Pretty Vowel Eater
 
-word = input("input a word: ")
+word = input("Ingresa una palabra: ")
 word = word.upper()
-word_without_vowels = ""
+word_without_vowels = "" # Variable acumuladora
 
-for i in word:
-   if i != 'A' and i != 'E' and i != 'I' and i != 'O' and i != 'U' :
-       word_without_vowels += i
-print(word_without_vowels)
-word_without_vowels = ""
-
-for i in word: #forma mas "profesional"
-    if i not in "AEIOU":
-        word_without_vowels += i
-print(word_without_vowels)
-word_without_vowels = ""
-
-for letter in word: #forma que pide el lab aunque sea muy idiota 
-
+for letter in word:
     if letter == "A":
-        continue
+        continue # Salta a la siguiente iteración
     elif letter == "E":
         continue
     elif letter == "I":
@@ -30,6 +17,7 @@ for letter in word: #forma que pide el lab aunque sea muy idiota
     elif letter == "U":
         continue
     else:
-       word_without_vowels += letter
-print(word_without_vowels)
-word_without_vowels = ""
+        # Si no es vocal, se "concatena" a nuestra variable
+        word_without_vowels += letter
+
+print("Palabra sin vocales:", word_without_vowels)

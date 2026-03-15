@@ -1,13 +1,17 @@
-#Jesus Antonio Baez Ortega 23310372 6E
-#LAB#23 The basics of lists
+# Jesus Antonio Baez Ortega 23310372 6E
+# LAB#23 The basics of lists
 
+# Lista inicial: 5 elementos
 hat_list = [1, 2, 3, 4, 5]
 
-hat_list[2] = int(input("Enter a number: "))  # Step 1 write a line of code that prompts the user
-# to replace the middle number with an integer number entered by the user.
+# Paso 1: El usuario reemplaza el número central (índice 2)
+hat_list[2] = int(input("Ingresa un número para el centro: "))
 
-del hat_list[-1]  # Step 2write a line of code that removes the last element from the list.
+# Paso 2: Eliminamos el último elemento usando el índice negativo
+del hat_list[-1]
 
-print(len(hat_list))  # Step 3 # Step 3: write a line of code that prints the length of the existing list.
+# Paso 3: Medimos la nueva longitud de la lista (ahora será 4)
+print("Longitud de la lista:", len(hat_list))
 
-print(hat_list)
+# Imprimimos el estado final de la lista
+print("Contenido final:", hat_list)

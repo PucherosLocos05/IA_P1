@@ -1,13 +1,15 @@
-#Jesus Antonio Baez Ortega 23310372 6E
-#LAB#8 Comments
-#this program computes the number of seconds in a given number of hours
-# this program has been written two days ago
+# Jesus Antonio Baez Ortega 23310372 6E
+# LAB#8 Comments
 
-a = 2 # number of hours
-seconds = 3600 # number of seconds in 1 hour
+# Este programa calcula cuántos segundos hay en un número determinado de horas.
+# Escrito hace dos días.
 
-print("Hours: ", a) #printing the number of hours
-# print("Seconds in Hours: ", a * seconds) # printing the number of seconds in a given number of hours
+horas = 2  # Número de horas a calcular
+segundos_por_hora = 3600  # Valor constante (60 min * 60 seg)
 
-#here we should also print "Goodbye", but a programmer didn't have time to write any code
-#this is the end of the program that computes the number of seconds in 3 hour
+print("Horas: ", horas) 
+
+# Cálculo y salida: quitamos el '#' para que el código funcione
+print("Segundos en", horas, "horas:", horas * segundos_por_hora)
+
+print("Goodbye") # ¡Ahora sí hubo tiempo de escribirlo!
